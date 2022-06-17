@@ -181,7 +181,7 @@
 }
 
 
-@media (min-width: 368px) and (max-width: 1199.98px) {
+@media (min-width: 375px) and (max-width: 1199.98px) {
   /* Banner */
   .banner-motive{
     padding:0px 20px;
@@ -193,7 +193,7 @@
     font-size: 30px;
   }
   .navbar{
-    padding: 0px 20px;
+    padding: 0px 10px;
     background-color: var(--secondary-color);
   }
   .container-fluid{
