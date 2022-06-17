@@ -24,11 +24,18 @@
 
 .navbar{
   position: absolute;
-  padding: 0 200px;
+  padding: 24px 200px;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1;
+}
+.nav-link{
+  color: var(--secondary-color) !important;
+}
+.nav-link:hover{
+  color: var(--tertiary-color) !important;
+  border-bottom: 3px solid var(--tertiary-color);
 }
 
 /* Banner-CSS */
@@ -193,11 +200,13 @@
     font-size: 30px;
   }
   .navbar{
-    padding: 0px 10px;
+    padding: 0px 20px;
     background-color: var(--secondary-color);
   }
+  .nav-link{
+    color: var(--tertiary-color) !important;
+  }
   .container-fluid{
-    padding-left: 0px;
-    padding-right: 0px;
+    width: 100%;
   }
 }
