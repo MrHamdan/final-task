@@ -45,7 +45,7 @@
 
 .nav-link {
   color: var(--secondary-color) !important;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .nav-link:hover {
@@ -298,6 +298,7 @@
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 80px;
+  color:#656565;
 }
 
 .build-image-design {
@@ -446,6 +447,7 @@
 
 .advantage-para {
   margin-bottom: 80px;
+  color: #656565;
 }
 
 .advantage-button {
@@ -520,6 +522,7 @@
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 40px;
+  color: #656565;
 }
 
 .user-button {
@@ -619,6 +622,7 @@
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 40px;
+  color: #656565;
 }
 
 .resume-card-heading {
@@ -716,7 +720,7 @@
 
 
 /* Media Query */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 279.99px) and (max-width: 1200px) {
   /* Nav */
   .navbar{
     position: relative;
@@ -725,9 +729,6 @@
   }
   .nav-link{
     color: var(--tertiary-color) !important;
-    font-size: 14px;
-    font-weight: 400;
-    margin-right: 20px;
   }
   /* Banner */
   .banner-section{
