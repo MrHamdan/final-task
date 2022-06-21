@@ -1,0 +1,82 @@
+/* Font-Import-Link */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Radio+Canada:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    font-family: 'Radio Canada', sans-serif;
+}
+
+:root {
+    --primary-text-color: #F1EEE9;
+    --primary-background-color: #e55a5a;
+    --secondary-background-color: #fbfaf8;
+    --signup-button-hover-color: #117EB8;
+    --fontawesome-icon-color:#DBD9D4;
+    --fontawesome-icon-hover-color:#282B8F;
+}
+
+/* Banner */
+.banner{
+    position: relative;
+}
+.banner-text h1{
+    font-size: 49px;
+}
+.no-gutters{
+    margin-right: 0;
+    margin-left: 0;
+}
+.first-bg{
+    background-color: var(--secondary-background-color);
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px;
+}
+.second-bg{
+    background-color: var(--primary-background-color);
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px;
+}
+.first-bg button{
+    border: 1px solid #DBD9D4;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    background-color: transparent;
+}
+.first-bg button:hover{
+    color: var(--primary-text-color);
+    background-color: var(--signup-button-hover-color);
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DBD9D4;
+    width: 40px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    margin-top: 35px;
+}
+.socials i{
+    color: var(--fontawesome-icon-color);
+    padding: 8px;
+}
+.socials i:hover{
+    color: var(--fontawesome-icon-hover-color);
+}
+.banner-text{
+    padding: 0px 16px;
+}
+/* Nav */
+.navbar{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}

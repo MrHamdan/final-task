@@ -1,79 +1,498 @@
 <!doctype html>
 <html lang="en">
-  <l>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/styles.css"></link>
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    
-    <!-- Nav Section Start -->
-    <div class="container-fluid main-container">
-  <!-- Content here -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="#">
-    <img src="/assets/images/logo.png" alt="">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">CREATE CV</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">COVER LETTER</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">CAREER ADVICE</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">MEMBER LOGIN</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">REGISTER</a>
-      </li>
-    </ul>
-    
-  </div>
-</nav>
-</div>
-    <!-- End of Nav Section -->
-    <div class="container-fluid">
-  <div class="row">
-    <div class="col-xl-5 col-sm-12 col-md-6 background-first">
-      <div class="banner-motive">
-        <p class="banner-para-text">Online CV and Professional Resume Maker</p>
-        <h1>Create a job-ready <br> Resume in minutes.</h1>
-        <p>The #1 resume & CV builder, trusted by 2+ million people <br> to land their dream job.</p>
-        <button class="btn button-style"> <img src="/assets/images/google.png" alt=""> Sign up with Google</button> <button class="btn button-style"> <img src="/assets/images/linkedin.png" alt=""> Sign up with Linkedin</button>
-        <p>Or sign up with <a href="">email</a> </p>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!-- Banner Section Start -->
+  <div class="banner">
+    <div class="row no-gutters">
+      <!-- Navbar Section Start -->
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <a class="navbar-brand" href="#">
+            <span class="logo-text-one">MYCV<span class="logo-text-two">LAB.</span> </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">CREATE CV</a>
+              <a class="nav-item nav-link" href="#">COVER LETTER</a>
+              <a class="nav-item nav-link" href="#">CAREER ADVICE</a>
+              <a class="nav-item nav-link" href="#">MEMBER LOGIN</a>
+              <a class="nav-item nav-link" href="#">REGISTER</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Navbar Section End -->
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+        <div class="background-first">
+            <div class="socials-div">
+              <div class="socials">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="banner-motive">
+                <p class="banner-text-para">Online CV and Professional Resume Maker</p>
+                <h1 class="banner-heading">Create a job-ready <br> <span>Resume</span> in minutes.</h1>
+                <p>The #1 resume & CV builder, trusted by 2+ million people <br> to land their dream job.</p>
+                <button class="btn button-style"> <img src="/assets/images/google.png" alt=""> Sign up with Google</button>
+                <button class="btn button-style"> <img src="/assets/images/linkedin.png" alt=""> Sign up with
+                  Linkedin</button>
+                  <p class="banner-text-para">Or sign up with <a href="">email</a> </p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+        <div class="background-second">
+            <img class="img-fluid" src="/assets/images/banner.png" alt="">
+            <p class="explore-custom-button text-center"><button class="explore">Explore<span class="icon-right"></span><span class="icon-right after"></span></button></p>
+        </div>
       </div>
     </div>
-    <div class="col-xl-7 col-sm-12 col-md-6 background-second">
-      <img class="img-fluid" src="/assets/images/banner.png" alt="">
-      <button class="explore">Explore<span class="icon-right"></span><span class="icon-right after"></span></button><a
-        class="signature" href="http://vanderlanth.io" target="_blank">
-    </div>
-    
   </div>
-</div>
-    
+  <!-- End of Banner Section -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  <!-- Build Your CV Section Start -->
+  <div class="container">
+    <div class="build-section">
+      <div class="row no-gutters">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+          <h1 class="build-text-heading">
+            Build Your CV Fast & 4 Easy Steps.
+          </h1>
+          <p class="build-text-para">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim
+            velit
+            mollit. <br> Exercitation veniam consequat sunt nostrud amet.</p>
+            <img class="line img-fluid" src="/assets/images/line.png" alt="">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center">
+          <div class="build-div-one">
+            <img class="build-image-design" src="/assets/images/one.png" alt="">
+            <p class="text-center number-para"><span class="build-number-design">1</span></p>
+          </div>
+      
+          <h4 class="build-text">Pick a Template</h4>
+          <p class="text-center">Don't sabotage your job search before it has even begun. Choose from our ATS-friendly,
+            hand-crafted resume templates</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center">
+          <div class="build-div-one">
+            <img class="build-image-design" src="/assets/images/two.png" alt="">
+            <p class="text-center number-para"><span class="build-number-design">2</span></p>
+          </div>
+          <h4 class="build-text">Customize Your Layout</h4>
+          <p class="text-center">Make the resume template truly your own. Customize the layout based on your experience
+            level.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center">
+          <div class="build-div-one">
+            <img class="build-image-design" src="/assets/images/three.png" alt="">
+            <p class="text-center number-para"><span class="build-number-design">3</span></p>
+          </div>
+          <h4 class="build-text">Fill in the Blanks</h4>
+          <p class="text-center">Fill in your resume information, let our AI content analyzer do its job, and see your
+            resume changes dynamically in real
+            time.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center">
+          <div class="build-div-one">
+            <img class="build-image-design" src="/assets/images/four.png" alt="">
+            <p class="text-center number-para"><span class="build-number-design">4</span></p>
+          </div>
+          <h4 class="build-text">Hit 'Download!'</h4>
+          <p class="text-center">And yes, it's free! We don't hit you with a paywall once you've completed your resume
+            in the Basic Account.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Build Your CV Section -->
+
+  <!-- CV Template Section Start-->
+  <div class="cv-template-background">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+          <h4 class="cv-text-heading-one">Our Professional <br> <span class="cv-text-heading-two">CV Templates</span>
+          </h4>
+          <p class="cv-text-para">Browse our selection of effective CV template examples for every sector and find the
+            best choice to create your CV
+            online. You can even switch easily between designs if you change your mind.</p>
+          <span class="cv-tags">ALL</span> <span class="cv-tags">WITH PHOTO</span> <span class="cv-tags">NO
+            PHOTO</span> <br> <span class="cv-tags">COVER LATTER</span>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          <img class="cv-image img-fluid" src="/assets/images/cv.png" alt="">
+          <div class="use-template-button">
+            <p class="text-center"><button class="template-button">USE THIS TEMPLATE</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of CV Template Section -->
+
+  <!-- Advantages of CV Section Start -->
+  <div class="container">
+    <div class="advantages-section">
+      <div class="row no-gutters">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+          <h1 class="advantage-heading">Advantages to using our CV builder.</h1>
+          <p class="advantage-para">Creating a winning document with our CV maker is easy and can be done in minutes.
+            Here are 6 reasons why OnlineCV <br> can
+            quickly help you design your best CV ever:</p>
+        </div>
+        <div class="col-sm-12 text-center">
+      
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
+          <div class="advantage">
+            <div>
+              <img src="/assets/images/advantageiconone.png" alt="">
+            </div>
+            <div class="advantage-texts">
+              <h4 class="advantage-text-heading">Easy to use CV builder</h4>
+              <p>Use the intuitive CV builder to quickly add CV content, change <span>CV templates</span> and customize fonts.
+                No
+                download required!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
+          <div class="advantage">
+            <div>
+              <img src="/assets/images/advantageicontwo.png" alt="">
+            </div>
+            <div class="advantage-texts">
+              <h4 class="advantage-text-heading">Job-Specific Phrases</h4>
+              <p>Use the intuitive CV builder to quickly add CV content, change CV templates and customize fonts. No
+                download
+                required!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
+          <div class="advantage">
+            <div>
+              <img src="/assets/images/advantageiconthree.png" alt="">
+            </div>
+            <div class="advantage-texts">
+              <h4 class="advantage-text-heading">Fast Easy Formatting</h4>
+              <p>Use the intuitive CV builder to quickly add CV content, change CV templates and customize fonts. No
+                download
+                required!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
+          <div class="advantage">
+            <div>
+              <img src="/assets/images/advantageiconfour.png" alt="">
+            </div>
+            <div class="advantage-texts">
+              <h4 class="advantage-text-heading">Pro Resume Templates</h4>
+              <p>Use the intuitive CV builder to quickly add CV content, change CV templates and customize fonts. No
+                download
+                required!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
+          <div class="advantage">
+            <div>
+              <img src="/assets/images/advantageiconfive.png" alt="">
+            </div>
+            <div class="advantage-texts">
+              <h4 class="advantage-text-heading">NO Hidden Fees</h4>
+              <p>Use the intuitive CV builder to quickly add CV content, change CV templates and customize fonts. No
+                download
+                required!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
+          <div class="advantage">
+            <div>
+              <img src="/assets/images/advantageiconsix.png" alt="">
+            </div>
+            <div class="advantage-texts">
+              <h4 class="advantage-text-heading">Step by Step Expert Tips</h4>
+              <p>Use the intuitive CV builder to quickly add CV content, change CV templates and customize fonts. No
+                download
+                required!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+          <button class="advantage-button">START NOW</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Advantages of CV Section -->
+
+  <!-- Stats Section Start -->
+  <div class="container">
+    <div class="stats-section">
+      <div class="row no-gutters">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="stats-text">
+            <div>
+              <img class="stats-icons" src="/assets/images/tick.png" alt="">
+            </div>
+            <div>
+              <span class="stats-text-heading">5934<span class="stats-plus">+</span></span>
+              <br>
+              <span class="stats-text-para">Completed CV</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="stats-text">
+            <div>
+              <img class="stats-icons" src="/assets/images/person.png" alt="">
+            </div>
+            <div>
+              <span class="stats-text-heading">4934<span class="stats-plus">+</span></span>
+              <br>
+              <span class="stats-text-para">Satisfied Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="stats-text">
+            <div>
+              <img class="stats-icons" src="/assets/images/star.png" alt="">
+            </div>
+            <div>
+              <span class="stats-text-heading">2578<span class="stats-plus">+</span></span>
+              <br>
+              <span class="stats-text-para">5 Stars Reviews</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="stats-text">
+            <div>
+              <img class="stats-icons" src="/assets/images/tick.png" alt="">
+            </div>
+            <div>
+              <span class="stats-text-heading">4994<span class="stats-plus">+</span></span>
+              <br>
+              <span class="stats-text-para">Downloaded CV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Stats Section -->
+
+
+  <!-- User Section Start -->
+  <div class="container">
+    <div class="user-section">
+      <div class="row no-gutters">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+          <h1 class="user-text-heading">Check Out Our User Loves.</h1>
+          <p class="user-text-para">Creating a winning document with our CV maker is easy and can be done in minutes. Here are
+            6 reasons why OnlineCV <br> can
+            quickly help you design your best CV ever:</p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+          <h1>4.5 of 5</h1>
+          <img class="user-ratings" src="/assets/images/ratings.png" alt="">
+          <p class="review-text">Based on 955 reviews on</p>
+          <img class="trustlogo" src="/assets/images/trustlogo.png" alt="">
+          <p><button class="user-button">WRITE A REVIEW</button></p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          One of three columns
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+          <p>Our Customers Have been <br> hired by: *</p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <span class="user-logos"><img src="/assets/images/googlelogo.png" alt=""></span>
+          <span class="user-logos"><img src="/assets/images/uklogo.png" alt=""></span>
+          <span class="user-logos"><img src="/assets/images/uksportlogo.png" alt=""></span>
+          <span class="user-logos"><img src="/assets/images/bbclogo.png" alt=""></span>
+          <span class="user-logos"><img src="/assets/images/ukpluslogo.png" alt=""></span>
+          <span class="user-logos"><img src="/assets/images/witneylogo.png" alt=""></span>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <p class="user-para">*The names and logos of the companies referred to above are all trademarks of their respective
+            holders. Unless
+            specifically stated otherwise, such references are not intended to imply any affiliation or association with
+            myperfectCV.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Cover Letter Section Start -->
+  <div class="cover-letter-background">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5 text-center">
+          <img class="img-fluid cover-letter-image" src="/assets/images/coverletter.png" alt="">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-7 col-xl-7 text-left">
+          <h1 class="cover-text-heading">Craft a compelling cover <br> letter in just 15 minutes</h1>
+          <p class="cover-text-para">A strong cover letter is the one thing that will help you stand out from the crowd and beat the competition for the role
+          you are applying for. We have created 100s of cover letter templates to help alleviate the pressure and ease overwhelm.
+          In just 15 minutes, you can have a ready-to-go, job-winning cover letter to go with your CV.</p>
+          <button class="cover-letter-button">BUILD MY COVER LETTER</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Cover Letter Section -->
+
+  <!-- Resume Builder Section Start -->
+  <div class="container">
+    <div class="resume-section">
+      <div class="row no-gutters">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+        <h1 class="resume-text-heading">Resume Builder Articles.</h1>
+        <p class="resume-text-para">Creating a winning document with our CV maker is easy and can be done in minutes.
+          Here are 6 reasons why OnlineCV <br> can
+          quickly help you design your best CV ever:</p>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+        <img class="img-fluid" src="/assets/images/resumeone.png" alt="">
+        <div class="card-link-div"><a href="#" class="card-links">#RESUME</a> <a href="#" class="card-links">#HELP</a> <a href="#" class="card-links">#FAQ</a></div>
+        <h5>Why should I use a resume builder?</h5>
+        <p class="resume-card-para">Using a resume builder makes the process of creating a resume significantly faster and easier. <a href="" class="card-links">Read more</a></p>
+        <hr>
+        <p class="resume-card-date">SEPTEMBER 23, 2021 . JOHN DOE</p>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+        <img class="img-fluid" src="/assets/images/resumetwo.png" alt="">
+        <div class="card-link-div"><a href="#" class="card-links">#RESUME</a> <a href="#" class="card-links">#HELP</a> <a href="#"
+            class="card-links">#FAQ</a></div>
+        <h5>Why should I use a resume builder?</h5>
+        <p class="resume-card-para">Using a resume builder makes the process of creating a resume significantly faster and
+          easier. <a href="" class="card-links">Read more</a></p>
+        <hr>
+        <p class="resume-card-date">SEPTEMBER 23, 2021 . JOHN DOE</p>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+        <img class="img-fluid" src="/assets/images/resumethree.png" alt="">
+        <div class="card-link-div"><a href="#" class="card-links">#RESUME</a> <a href="#" class="card-links">#HELP</a> <a href="#"
+            class="card-links">#FAQ</a></div>
+        <h5>Why should I use a resume builder?</h5>
+        <p class="resume-card-para">Using a resume builder makes the process of creating a resume significantly faster and
+          easier. <a href="" class="card-links">Read more</a></p>
+        <hr>
+        <p class="resume-card-date">SEPTEMBER 23, 2021 . JOHN DOE</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- End of Resume Builder Section -->
+
+  <!-- Footer Section Start -->
+  <footer class="footer-section">
+      <div class="container">
+        <div class="footer-style">
+          <div class="row no-gutters">
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 text-left">
+              <span class="logo-text-one">MYCV<span class="logo-text-two">LAB.</span> </span>
+              <ul>
+                <li>
+                  <a href="#">HOMEPAGE</a>
+                </li>
+                <li>
+                  <a href="#">RESUME TEMPLATES</a>
+                </li>
+                <li>
+                  <a href="#">CV TEMPLATES</a>
+                </li>
+                <li>
+                  <a href="#">COVER LETTERS</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 text-left">
+              <h3>Curriculum Vitae</h3>
+              <ul>
+                <li><a href="#">CV BUILDER</a></li>
+                <li><a href="#">CV TEMPLATES</a></li>
+                <li><a href="#">CV EXAMPLES</a></li>
+                <li><a href="#">HOW TO WRITE A CV</a></li>
+                <li><a href="#">CV FORMATS</a></li>
+                <li><a href="#">GET HIRED DURING COVID-19</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 text-left">
+              <h3>About</h3>
+              <ul>
+                <li><a href="#">WHO WE ARE</a></li>
+                <li><a href="#">TERMS AND CONDITIONS</a></li>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">SITEMAP</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 text-left">
+              <h3>Customer Service</h3>
+              <ul>
+                <li><a href="#">0808 289 0676</a></li>
+                <li><a href="#">MON-SUN 09:00-21:00</a></li>
+                <div class="footer-social-icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i
+                      class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i
+                      class="fa-brands fa-linkedin-in"></i></a></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Optional JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
