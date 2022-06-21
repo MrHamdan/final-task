@@ -45,6 +45,7 @@
 
 .nav-link {
   color: var(--secondary-color) !important;
+  border-bottom: 1px solid transparent;
 }
 
 .nav-link:hover {
@@ -53,7 +54,7 @@
 }
 
 /* Banner-CSS */
-.banner {
+.banner-section {
   position: relative;
 }
 
@@ -282,8 +283,8 @@
 .build-text-heading::before{
   content: '';
   position: absolute;
-  left:200px;
-  top: 25px;
+  left:20%;
+  top: 50%;
   height: 32px;
   width: 70%;
   background: var(--secondary-background-color);
@@ -378,9 +379,6 @@
   line-height: 35px;
 }
 
-.cv-image {
-  /* position: relative; */
-}
 
 .template-button {
   background-color: var(--tertiary-color);
@@ -437,10 +435,10 @@
 .advantage-heading::before{
   content: '';
   position: absolute;
-  left:185px;
+  left:17%;
   top: 25px;
   height: 32px;
-  width: 70%;
+  width: 80%;
   background: var(--secondary-background-color);
   z-index: -1;
   transition: 0.3s ease-in all;
@@ -509,10 +507,10 @@
 .user-text-heading::before{
   content: '';
   position: absolute;
-  left:295px;
+  left:26%;
   top: 25px;
   height: 32px;
-  width: 60%;
+  width: 55%;
   background: var(--secondary-background-color);
   z-index: -1;
   transition: 0.3s ease-in all;
@@ -608,7 +606,7 @@
 .resume-text-heading::before{
   content: '';
   position: absolute;
-  left:315px;
+  left:29%;
   top: 25px;
   height: 32px;
   width: 50%;
@@ -717,4 +715,31 @@
 }
 
 
-
+/* Media Query */
+@media screen and (max-width: 768px) {
+  /* Nav */
+  .navbar{
+    position: relative;
+    background-color: var(--secondary-color);
+    padding: 20px;
+  }
+  .nav-link{
+    color: var(--tertiary-color) !important;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 20px;
+  }
+  /* Banner */
+  .banner-section{
+    padding: 0px;
+  }
+  .background-first{
+    padding: 80px 0px;
+  }
+  .background-second{
+    padding: 80px 0px;
+  }
+  .socials{
+    margin: 0px 10px;
+  }
+}
