@@ -301,6 +301,13 @@
   color:#656565;
 }
 
+.build-card-para{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 80px;
+  color:#656565;
+}
+
 .build-image-design {
   background-color: var(--secondary-background-color);
   padding: 32px;
@@ -721,7 +728,7 @@
 
 /* Media Query */
 @media screen and (min-width: 279.99px) and (max-width: 1200px) {
-  /* Nav */
+  /* Navbar Section */
   .navbar{
     position: relative;
     background-color: var(--secondary-color);
@@ -730,7 +737,7 @@
   .nav-link{
     color: var(--tertiary-color) !important;
   }
-  /* Banner */
+  /* Banner Section */
   .banner-section{
     padding: 0px;
   }
@@ -742,5 +749,130 @@
   }
   .socials{
     margin: 0px 10px;
+  }
+  .banner-heading{
+    font-size: 25px;
+  }
+  .banner-heading span{
+    font-size: 25px;
+  }
+  .background-second{
+    padding: 80px 20px;
+  }
+  /* Build Section */
+  .build-section{
+    padding: 80px 0px;
+  }
+  .build-text-heading{
+    font-size: 20px;
+  }
+  .build-text-heading::before{
+    content: '';
+    position: absolute;
+    left:8%;
+    top: 0%;
+    height: 32px;
+    width: 90%;
+    background: var(--secondary-background-color);
+    z-index: -1;
+    transition: 0.3s ease-in all;
+  }
+  .build-text-para{
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  /* CV Template Section */
+  .cv-template-background{
+    padding: 80px 0px;
+  }
+  .cv-text-heading-one{
+    font-size: 30px;
+  }
+  .cv-text-heading-two{
+    font-size: 30px;
+  }
+  .use-template-button{
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  /* Advantage Section */
+  .advantages-section{
+    padding: 40px 0px;
+  }
+  .advantage-heading{
+    font-size: 20px;
+  }
+  .advantage-heading::before{
+    content: '';
+    position: absolute;
+    left:8%;
+    top: 0%;
+    height: 32px;
+    width: 90%;
+    background: var(--secondary-background-color);
+    z-index: -1;
+    transition: 0.3s ease-in all;
+  }
+  /* Stats Section */
+  .stats-section{
+    padding: 40px 0px;
+  }
+  .stats-text{
+    margin-bottom: 40px;
+  }
+  /* User Section */
+  .user-section{
+    padding: 80px 0px;
+  }
+  .user-text-heading{
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .user-text-heading::before{
+    content: '';
+    position: absolute;
+    left:20%;
+    top: 0%;
+    height: 32px;
+    width: 70%;
+    background: var(--secondary-background-color);
+    z-index: -1;
+    transition: 0.3s ease-in all;
+  }
+  .user-logos{
+    display: flex;
+    margin-bottom: 40px;
+  }
+  /* Cover Letter Section */
+  .cover-letter-section{
+    padding: 80px 0px;
+  }
+  .cover-text-heading{
+    font-size: 20px;
+    margin: 40px 0px;
+  }
+  .cover-letter-button{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  /* Resume Section */
+  .resume-section{
+    padding: 80px 0px;
+  }
+  .resume-text-heading{
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .resume-text-heading::before{
+    content: '';
+    position: absolute;
+    left:20%;
+    top: 0%;
+    height: 32px;
+    width: 70%;
+    background: var(--secondary-background-color);
+    z-index: -1;
+    transition: 0.3s ease-in all;
   }
 }
