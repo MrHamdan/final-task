@@ -19,6 +19,7 @@
   --secondary-background-color: #FFEFEF;
   --text-secondary-color: #FFEFEF;
   --tertiary-background-color: #0F141E;
+  --card-background-color: #FCEDED;
 }
 
 /* Navbar-CSS */
@@ -362,6 +363,12 @@
   padding: 120px 0px;
 }
 
+.carousel-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cv-text-heading-one {
   color: var(--text-secondary-color);
   font-size: 20px;
@@ -555,6 +562,10 @@
   color: #959595;
 }
 
+.card{
+  background-color: var(--card-background-color);
+  border: 0.5px solid var(--primary-color);
+}
 
 
 .review-text {
@@ -727,7 +738,7 @@
 
 
 /* Media Query */
-@media screen and (min-width: 279.99px) and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   /* Navbar Section */
   .navbar{
     position: relative;
@@ -875,4 +886,38 @@
     z-index: -1;
     transition: 0.3s ease-in all;
   }
+}
+
+/* Owl Carousel CSS */
+.owl-item>div {
+  cursor: pointer;
+  margin: 20% 10%;
+  /* transition: margin 0.4s ease; */
+}
+
+.owl-item.center>div {
+  cursor: auto;
+  margin: 0% -5%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-item.center>div:before{
+  content: 'USE THIS TEMPLATE';
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  font-size: 10px;
+  font-weight: 400;
+  padding: 12px 28px;
+  transition: 0.3s ease-in all;
+  cursor: pointer;
+}
+
+.owl-item:not(.center)>div:hover {
+  opacity: .75;
 }
