@@ -957,7 +957,7 @@
     transition: 0.3s ease-in all;
   }
 }
-@media screen and (max-width: 1198.99px){
+@media screen and (max-width: 1199.98px){
   .navbar {
       position: relative;
       background-color: var(--secondary-color);
