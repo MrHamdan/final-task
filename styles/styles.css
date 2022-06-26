@@ -612,6 +612,20 @@
   margin-top: 5px;
 }
 
+.progress-div{
+  margin-top: -7px;
+  margin-bottom: 25px;
+}
+
+.progress{
+  height: 2px;
+}
+
+.progress-bar{
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
 /* Cover-Letter-Section-CSS */
 .cover-letter-background {
   background-color: var(--tertiary-background-color);
@@ -975,7 +989,7 @@
   border-radius: 8px;
 }
 
-.owl-theme .owl-dots, .owl-theme .owl-nav{
+.owl-two .owl-theme .owl-dots, .owl-theme .owl-nav{
   text-align: right;
 }
 
