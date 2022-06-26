@@ -957,21 +957,7 @@
     transition: 0.3s ease-in all;
   }
 }
-@media screen and (max-width: 1199.98px){
-  .navbar {
-      position: relative;
-      background-color: var(--secondary-color);
-      padding: 20px 80px;
-    }
-  
-    .nav-link {
-      color: var(--tertiary-color) !important;
-    }
-  
-    .navbar-nav {
-      text-align: right;
-    }
-}
+
 /* Owl Carousel CSS */
 .owl-one .owl-item>div {
   cursor: pointer;
