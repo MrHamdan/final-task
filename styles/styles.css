@@ -298,7 +298,7 @@
 .build-text-para {
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   color:#656565;
 }
 
@@ -414,8 +414,7 @@
 
 /* Advantages Of CV Section CSS */
 .advantages-section {
-  margin-top: 104px;
-  margin-bottom: 104px;
+  padding: 104px 0px;
   position: relative;
 }
 
@@ -729,7 +728,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 0px;
+  padding: 50px 0px;
 }
 
 .footer-style h3 {
@@ -797,15 +796,18 @@
   .nav-link{
     color: var(--tertiary-color) !important;
   }
+  .navbar-nav{
+    text-align: right;
+  }
   /* Banner Section */
   .banner-section{
     padding: 0px;
   }
   .background-first{
-    padding: 80px 0px;
+    padding: 20px 0px;
   }
   .background-second{
-    padding: 80px 0px;
+    padding: 40px 0px;
   }
   .socials{
     margin: 0px 10px;
@@ -821,7 +823,7 @@
   }
   /* Build Section */
   .build-section{
-    padding: 80px 0px;
+    padding: 40px 0px;
   }
   .build-text-heading{
     font-size: 20px;
@@ -841,9 +843,12 @@
     font-size: 16px;
     margin-bottom: 40px;
   }
+  .build-card-para {
+    margin-bottom: 40px;
+  }
   /* CV Template Section */
   .cv-template-background{
-    padding: 80px 0px;
+    padding: 40px 0px;
   }
   .cv-text-heading-one{
     font-size: 30px;
@@ -854,6 +859,9 @@
   .use-template-button{
     margin-top: 20px;
     margin-left: 0px;
+  }
+  .carousel-div{
+    margin-top: 60px;
   }
   /* Advantage Section */
   .advantages-section{
@@ -906,6 +914,15 @@
   }
   .user-logos{
     margin-bottom: 50px;
+  }
+  .progress-div{
+      margin-top: 20px;
+  }
+  .rating-review{
+    text-align: center;
+  }
+  .hired-text{
+    text-align: center;
   }
   /* Cover Letter Section */
   .cover-letter-section{
