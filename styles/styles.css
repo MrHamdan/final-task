@@ -552,8 +552,9 @@
   font-weight: 400;
 }
 
-.user-logos {
-  margin-right: 40px;
+.user-brands {
+  display: flex;
+  justify-content: space-between;
 }
 
 .user-para {
@@ -562,11 +563,40 @@
   color: #959595;
 }
 
+.review-carousel-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card{
   background-color: var(--card-background-color);
   border: 0.5px solid var(--primary-color);
+  width: 352px;
+  height: 224px;
+  padding: 16px;
 }
 
+.card-div{
+  display:flex;
+  align-items: center;
+}
+
+.card-heading{
+  font-size:10px;
+  font-weight: 700;
+}
+
+.card-colored-text{
+  color: var(--primary-color);
+}
+
+.card-para{
+  font-size: 16px;
+  font-weight: 400;
+  color: #656565;
+  margin-top: 8px;
+}
 
 .review-text {
   margin-top: 28px;
@@ -575,6 +605,11 @@
 
 .trustlogo {
   margin-bottom: 25px;
+}
+
+.rating-text{
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 /* Cover-Letter-Section-CSS */
@@ -850,9 +885,13 @@
     z-index: -1;
     transition: 0.3s ease-in all;
   }
-  .user-logos{
+  .user-brands{
     display: flex;
-    margin-bottom: 40px;
+    flex-direction: column;
+    padding: 0px 100px;
+  }
+  .user-logos{
+    margin-bottom: 50px;
   }
   /* Cover Letter Section */
   .cover-letter-section{
@@ -889,13 +928,13 @@
 }
 
 /* Owl Carousel CSS */
-.owl-item>div {
+.owl-one .owl-item>div {
   cursor: pointer;
   margin: 20% 10%;
   /* transition: margin 0.4s ease; */
 }
 
-.owl-item.center>div {
+.owl-one .owl-item.center>div {
   cursor: auto;
   margin: 0% -5%;
   position: relative;
@@ -904,11 +943,11 @@
   align-items: center;
 }
 
-.owl-item.center>div:before{
+.owl-one .owl-item.center>div:before{
   content: 'USE THIS TEMPLATE';
   position: absolute;
   z-index: 1;
-  bottom: 10%;
+  bottom: 3%;
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
   font-size: 10px;
@@ -918,6 +957,30 @@
   cursor: pointer;
 }
 
-.owl-item:not(.center)>div:hover {
+.owl-one .owl-item:not(.center)>div:hover {
   opacity: .75;
+}
+
+.fa-arrow-left-long{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 8px 8px;
+  border-radius: 8px;
+}
+
+.fa-arrow-right-long {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 8px 8px;
+  border-radius: 8px;
+}
+
+.owl-theme .owl-dots, .owl-theme .owl-nav{
+  text-align: right;
+}
+
+.owl-carousel .owl-item .rating-style{
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 }
