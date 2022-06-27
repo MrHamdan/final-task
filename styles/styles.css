@@ -279,6 +279,7 @@
   font-weight: 700;
   margin-bottom: 16px;
   position: relative;
+  color: var(--primary-text-color);
 }
 
 .build-text-heading::before{
@@ -351,6 +352,9 @@
   color: var(--primary-text-color);
 }
 
+.build-heading-dot{
+  color: var(--tertiary-color);
+}
 
 /* CV-Template-Section-CSS */
 .cv-template-background {
@@ -437,13 +441,14 @@
 .advantage-text-heading {
   font-size: 20px;
   font-weight: 700;
-  color: var(--text-tertiary-color);
+  color: var(--primary-text-color);
 }
 
 .advantage-heading {
   margin-bottom: 24px;
   font-size: 49px;
   font-weight: 700;
+  color: var(--primary-text-color);
 }
 
 .advantage-heading::before{
@@ -472,6 +477,10 @@
   font-size: 16px;
   font-weight: 400;
   border-radius: 3px;
+}
+
+.advantage-heading-dot{
+  color: var(--tertiary-color);
 }
 
 /* Stats-Section-CSS */
@@ -517,6 +526,11 @@
 .user-text-heading {
   font-size: 49px;
   font-weight: 700;
+  color: var(--primary-text-color);
+}
+
+.user-heading-dot{
+  color: var(--primary-color);
 }
 
 .user-text-heading::before{
@@ -625,6 +639,22 @@
   width: 100%;
 }
 
+.rating-out-of{
+  font-size: 39px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+
+.reviews-on{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+
+.hired-text{
+  color: var(--primary-text-color);
+}
+
 /* Cover-Letter-Section-CSS */
 .cover-letter-background {
   background-color: var(--tertiary-background-color);
@@ -657,6 +687,8 @@
   height: 56px;
   background-color: var(--tertiary-color);
   color: var(--text-secondary-color);
+  border: 0px;
+  border-radius: 3px;
 }
 
 /* Resume-Section-CSS */
@@ -665,12 +697,14 @@
   padding: 104px 0px;
 }
 
-
+.resume-heading-dot{
+  color: var(--primary-color);
+}
 
 .resume-text-heading {
   font-size: 49px;
   font-weight: 700;
-
+  color: var(--primary-text-color);
 }
 .resume-text-heading::before{
   content: '';
@@ -694,13 +728,14 @@
 .resume-card-heading {
   font-size: 20px;
   font-weight: 700;
-  color: var(--tertiary-color);
+  color: var(--primary-text-color);
 }
 
 .resume-card-para {
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
+  color: #474747;
 }
 
 .resume-card-date {
@@ -717,6 +752,8 @@
 
 .card-link-div {
   margin: 10px 0px;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 
@@ -763,11 +800,19 @@
   margin-right: 18px;
 }
 
+.footer-social-icons .fa-facebook-f:hover {
+  color: var(--primary-color);
+}
+
 .footer-social-icons .fa-twitter {
   background-color: #3C414A;
   padding: 10px 14px;
   border-radius: 50%;
   margin-right: 18px;
+}
+
+.footer-social-icons .fa-twitter:hover {
+  color: var(--primary-color);
 }
 
 .footer-social-icons .fa-linkedin-in {
@@ -777,11 +822,19 @@
   margin-right: 18px;
 }
 
+.footer-social-icons .fa-linkedin-in:hover {
+  color: var(--primary-color);
+}
+
 .footer-social-icons .fa-instagram {
   background-color: #3C414A;
   padding: 10px 14px;
   border-radius: 50%;
   margin-right: 18px;
+}
+
+.footer-social-icons .fa-instagram:hover {
+  color: var(--primary-color);
 }
 
 
