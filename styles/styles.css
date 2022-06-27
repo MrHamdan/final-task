@@ -422,7 +422,15 @@
   position: relative;
 }
 
+.advantage-text-para{
+  color: #474747;
+  font-size: 16px;
+  font-weight: 400;
+}
 
+.bold-text{
+  color: var(--primary-text-color);
+}
 
 .advantage {
   display: flex;
@@ -839,7 +847,7 @@
 
 
 /* Media Query */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 280px) and (max-width: 768px) {
   /* Navbar Section */
   .navbar{
     position: relative;
@@ -850,7 +858,7 @@
     color: var(--tertiary-color) !important;
   }
   .navbar-nav{
-    text-align: right;
+    text-align: center;
   }
   /* Banner Section */
   .banner-section{
@@ -863,7 +871,7 @@
     padding: 40px 0px;
   }
   .socials{
-    margin: 0px 10px;
+    margin: 0px 5px;
   }
   .banner-heading{
     font-size: 25px;
@@ -916,6 +924,9 @@
   .carousel-div{
     margin-top: 60px;
   }
+  .cv-tags{
+    font-size: 13px;
+  }
   /* Advantage Section */
   .advantages-section{
     padding: 40px 0px;
@@ -933,6 +944,10 @@
     background: var(--secondary-background-color);
     z-index: -1;
     transition: 0.3s ease-in all;
+  }
+  .advantage{
+    flex-direction: column;
+    margin-bottom: 40px;
   }
   /* Stats Section */
   .stats-section{
