@@ -281,7 +281,7 @@
           <div class="col-sm-12 text-center"></div>
           <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
             <div class="advantage">
-              <div class="text-center">
+              <div class="text-center advantage-card-image">
                 <img src="/assets/images/advantageiconone.png" alt="" />
               </div>
               <div class="advantage-texts">
@@ -296,7 +296,7 @@
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
             <div class="advantage">
-              <div class="text-center">
+              <div class="text-center advantage-card-image">
                 <img src="/assets/images/advantageicontwo.png" alt="" />
               </div>
               <div class="advantage-texts">
@@ -310,7 +310,7 @@
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
             <div class="advantage">
-              <div class="text-center">
+              <div class="text-center advantage-card-image">
                 <img src="/assets/images/advantageiconthree.png" alt="" />
               </div>
               <div class="advantage-texts">
@@ -324,7 +324,7 @@
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
             <div class="advantage">
-              <div class="text-center">
+              <div class="text-center advantage-card-image">
                 <img src="/assets/images/advantageiconfour.png" alt="" />
               </div>
               <div class="advantage-texts">
@@ -339,7 +339,7 @@
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
             <div class="advantage">
-              <div class="text-center">
+              <div class="text-center advantage-card-image">
                 <img src="/assets/images/advantageiconfive.png" alt="" />
               </div>
               <div class="advantage-texts">
@@ -354,7 +354,7 @@
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-left">
             <div class="advantage">
-              <div class="text-center">
+              <div class="text-center advantage-card-image">
                 <img src="/assets/images/advantageiconsix.png" alt="" />
               </div>
               <div class="advantage-texts">
@@ -880,7 +880,6 @@
       });
       $(".owl-two").owlCarousel({
         loop: true,
-        margin: 300,
         nav: true,
         navText: [
           "<i class='fa-solid fa-arrow-left-long'></i>",
@@ -892,14 +891,15 @@
         autoplayHoverPause: true,
         responsive: {
           0: {
-            margin: 343,
+            margin: 20,
             items: 1,
           },
-          600: {
-            margin: 80,
+          768: {
+            margin: 20,
             items: 2,
           },
-          1000: {
+          1200: {
+            margin: 300,
             items: 3,
           },
         },
