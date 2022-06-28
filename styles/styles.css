@@ -488,6 +488,13 @@
   border-radius: 3px;
 }
 
+.advantage-button:hover{
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--text-secondary-color);
+  transition: 0.3s ease-in all;
+}
+
 .advantage-heading-dot {
   color: var(--tertiary-color);
 }
@@ -571,6 +578,13 @@
   border-radius: 3px;
   font-size: 13px;
   font-weight: 400;
+}
+
+.user-button:hover{
+  cursor: pointer;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  transition: 0.3s ease-in all;
 }
 
 .user-brands {
@@ -704,6 +718,13 @@
   color: var(--text-secondary-color);
   border: 0px;
   border-radius: 3px;
+}
+
+.cover-letter-button:hover{
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--text-secondary-color);
+  transition: 0.3s ease-in all;
 }
 
 /* Resume-Section-CSS */
