@@ -65,6 +65,12 @@
   margin-right: 0;
 }
 
+.no-gutters>.col, .no-gutters>[class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
+  min-height: 0;
+}
+
 .background-first {
   background-color: var(--secondary-color);
   width: 100%;
